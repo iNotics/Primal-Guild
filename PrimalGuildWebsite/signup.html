@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Primal Guild Sign Ups</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/scripts.js" defer></script>
+</head>
+<body>
+<div class="body-wrapper">
+
+  <!-- Banner -->
+  <header class="banner">
+    <img src="images/banner.jpg" alt="Guild Banner" class="banner-img">
+    <img src="images/logo.png" alt="Guild Logo" class="logo">
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="roster.html">Roster</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="assignments.html">Assignments</a></li>
+    </ul>
+    <div class="navbar-buttons">
+      <button id="themeToggle">🌙</button>
+      <button id="adminBtn"><span class="cog">&#9881;</span> Admin</button>
+      <button id="editRaidInfoBtn">Edit Raid Info</button>
+    </div>
+  </nav>
+
+  <div class="gutter-wrapper">
+    <div class="site-frame">
+      <main class="main-content">
+
+        <!-- Sign-Ups -->
+        <section class="signups">
+          <h2>Sign Ups</h2>
+          <div class="signup-row">
+            <div class="signup-block">
+              <span class="raid-info-btn">
+                Friday Raid – Dec 27, 7:30 PM – 10:00 PM EST
+                <button class="signup-btn" onclick="signupRaid('Friday')">Sign Up</button>
+              </span>
+            </div>
+            <div class="signup-block">
+              <span class="raid-info-btn">
+                Saturday Raid – Dec 28, 7:30 PM – 11:00 PM EST
+                <button class="signup-btn" onclick="signupRaid('Saturday')">Sign Up</button>
+              </span>
+            </div>
+            <div class="signup-block">
+              <span class="raid-info-btn">
+                Pop-Up Raid – TBD
+                <button class="signup-btn" onclick="signupRaid('Pop-Up')">Sign Up</button>
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Thumbnails -->
+        <section class="signup-thumbnails">
+          <h2>Signed-Up Members</h2>
+          <div id="membersGrid" class="members-grid"></div>
+        </section>
+
+        <!-- Backup Raiders -->
+        <section class="backup-raiders">
+          <h2>Backup Raiders</h2>
+          <div id="backupGrid" class="members-grid"></div>
+        </section>
+
+        <!-- Managed Raiders -->
+        <section class="managed-raiders">
+          <h2>Managed Raiders</h2>
+          <div id="raidersList" class="raiders-list"></div>
+        </section>
+
+      </main>
+
+      <footer class="sticky-footer">
+        <p>Primal Guild © 2025</p>
+      </footer>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
